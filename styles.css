@@ -1,8 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* ======= Contenedores ======= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ======= Encabezado ======= */
+.site-header {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+/* ======= Secciones ======= */
+.section {
+  padding: 5rem 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #111111;
+}
+
+/* ======= Hero ======= */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #000000;
+  padding: 6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero-avatar {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  border: 4px solid white;
+  border: 4px solid #2563eb;
   margin: 0 auto;
 }
 
@@ -13,12 +118,13 @@
 .hero-title {
   font-size: 2.5rem;
   font-weight: 900;
+  color: #000000;
 }
 
 .hero-subtitle {
   font-size: 1.1rem;
   margin-top: 0.5rem;
-  color: #e0e7ff;
+  color: #333333;
 }
 
 .hero-cta {
@@ -39,21 +145,21 @@
 }
 
 .btn.primary {
-  background: white;
-  color: #1e3a8a;
-}
-
-.btn.primary:hover {
-  background: #f3f4f6;
-}
-
-.btn.ghost {
-  border: 2px solid white;
+  background: #2563eb;
   color: white;
 }
 
+.btn.primary:hover {
+  background: #1e40af;
+}
+
+.btn.ghost {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
 .btn.ghost:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(37, 99, 235, 0.1);
 }
 
 /* ======= Skills ======= */
@@ -64,7 +170,8 @@
 }
 
 .skill-card {
-  background: white;
+  background: #ffffff;
+  color: #000000;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -96,11 +203,12 @@
 }
 
 .project-card {
-  background: white;
+  background: #ffffff;
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  color: #000000;
 }
 
 .project-card:hover {
@@ -120,10 +228,11 @@
 .project-title {
   font-size: 1.25rem;
   font-weight: 700;
+  color: #000000;
 }
 
 .project-desc {
-  color: #4b5563;
+  color: #333333;
   margin: 0.5rem 0 1rem;
 }
 
@@ -172,7 +281,8 @@
 }
 
 .timeline-content {
-  background: white;
+  background: #ffffff;
+  color: #000000;
   border-radius: 0.5rem;
   padding: 1rem;
   flex: 1;
@@ -190,7 +300,8 @@
   display: flex;
   align-items: start;
   gap: 1rem;
-  background: white;
+  background: #ffffff;
+  color: #000000;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -204,6 +315,8 @@
 /* ======= Contacto ======= */
 .section-center {
   text-align: center;
+  background: #ffffff;
+  color: #000000;
 }
 
 .contact-cta {
@@ -222,11 +335,12 @@
 
 /* ======= Footer ======= */
 .site-footer {
-  background: #1f2937;
-  color: #d1d5db;
+  background: #ffffff;
+  color: #000000;
   text-align: center;
   padding: 1.5rem 0;
   margin-top: 4rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 /* ======= Media Queries ======= */
@@ -237,7 +351,7 @@
   }
 
   .main-nav {
-    display: none; /* Puedes reemplazar por menú hamburguesa si quieres */
+    display: none;
   }
 
   .section {
@@ -277,4 +391,3 @@
     left: 5px;
   }
 }
-
