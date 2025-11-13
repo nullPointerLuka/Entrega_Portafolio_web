@@ -1,0 +1,417 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #f7f6f8;
+  background-color: #191022;
+}
+
+/* ======= Estilos del tema claro ======= */
+@media (prefers-color-scheme: light) {
+  body {
+    color: #111827;
+    background-color: #f9fafb;
+  }
+
+  .site-header {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .section-title {
+    color: #1f2937;
+  }
+
+  .skill-card,
+  .project-card,
+  .timeline-content,
+  .achievement {
+    background: #ffffff;
+    color: #111827;
+  }
+
+  .link-primary {
+    color: #2563eb;
+  }
+
+  .site-footer {
+    background: #1f2937;
+    color: #d1d5db;
+  }
+}
+
+/* ======= Contenedores ======= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ======= Encabezado ======= */
+.site-header {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+/* ======= Secciones ======= */
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #4b5563;
+}
+
+/* ======= Hero ======= */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #000000, #011447);
+  color: white;
+  padding: 6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid white;
+  margin: 0 auto;
+}
+
+.hero-content {
+  flex: 1 1 300px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #e0e7ff;
+}
+
+.hero-cta {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ======= Botones ======= */
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: white;
+  color: #1e3a8a;
+}
+
+.btn.primary:hover {
+  background: #f3f4f6;
+}
+
+.btn.ghost {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ======= Skills ======= */
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.skill-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar-bg {
+  background: #e5e7eb;
+  border-radius: 0.5rem;
+  height: 8px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  background: #2563eb;
+  height: 8px;
+  border-radius: 0.5rem;
+}
+
+/* ======= Proyectos ======= */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 1rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.project-desc {
+  color: #4b5563;
+  margin: 0.5rem 0 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.link-primary {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ======= Línea de tiempo ======= */
+.timeline {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #d1d5db;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #2563eb;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.timeline-content {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* ======= Logros ======= */
+.achievements-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.achievement {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-icon {
+  color: #2563eb;
+  font-size: 2rem;
+}
+
+/* ======= Contacto ======= */
+.section-center {
+  text-align: center;
+}
+
+.contact-cta {
+  margin-top: 2rem;
+}
+
+.github-icon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.btn.large {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* ======= Footer ======= */
+.site-footer {
+  background: #1f2937;
+  color: #d1d5db;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+}
+
+/* ======= Media Queries ======= */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav {
+    display: none; /* Puedes reemplazar por menú hamburguesa si quieres */
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-dot {
+    left: 5px;
+  }
+}
