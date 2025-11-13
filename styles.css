@@ -19,7 +19,7 @@ body {
 /* ======= Estilos del tema claro ======= */
 @media (prefers-color-scheme: light) {
   body {
-    color: white;
+    color: #111827;
     background-color: #f9fafb;
   }
 
