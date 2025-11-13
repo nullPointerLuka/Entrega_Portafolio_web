@@ -13,13 +13,13 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #f7f6f8;
-  background-color: #191022;
+  background-color: white;
 }
 
 /* ======= Estilos del tema claro ======= */
 @media (prefers-color-scheme: light) {
   body {
-    color: #111827;
+    color:white;
     background-color: #f9fafb;
   }
 
