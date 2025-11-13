@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio</title>
+
+  <!-- Fuentes y iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" crossorigin href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Estilos locales -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Mantener comportamiento de Material Symbols si no se carga CSS aún */
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-root">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-name">Portafolio</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="#About">Acerca de mi</a>
+          <a class="nav-link" href="#skills">Habilidades</a>
+          <a class="nav-link" href="#projects">Proyectos</a>
+          <a class="nav-link" href="#education">Educacion</a>
+          <a class="nav-link" href="#contact">Contactos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="container main-layout">
+        <!-- Hero -->
+        <section id="hero" class="section hero-section">
+          <div class="hero-inner">
+            <div class="hero-avatar" role="img" aria-label="Retrato de Luis Eduardo" style="background-image: url('https://i.pinimg.com/736x/9d/e3/d1/9de3d1b0df97d3e583aad524fd550c6a.jpg');"></div>
+
+            <div class="hero-content">
+              <h1 class="hero-title">Luis Eduardo Lucas Gutiérrez</h1>
+              <h2 class="hero-subtitle">Desarrollador en formación con gran interés por la creación de soluciones digitales.</h2>
+
+              <div class="hero-cta">
+                <a class="btn primary" href="#projects">Proyectos</a>
+                <a class="btn ghost" href="#contact">Acerca de mi</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+          <h2 class="section-title">Acerca de mi</h2>
+          <p class="section-text">
+            Estudiante de Ingeniería de Software en la Fundación Universitaria Compensar.
+Tengo experiencia participando en proyectos enfocados en la lógica y creación de videojuegos, lo que me ha permitido fortalecer mis habilidades analíticas y mi pensamiento lógico.
+Me apasiona el aprendizaje constante y disfruto cada día explorando nuevas áreas relacionadas con la programación y el desarrollo web.</p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+          <h2 class="section-title">Mis Habilidades</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <p class="skill-name">HTML5 &amp; CSS3</p>
+              <div class="skill-bar-bg"><div class="skill-bar" style="width:75%"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <p class="skill-name">JavaScript</p>
+              <div class="skill-bar-bg"><div class="skill-bar" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <p class="skill-name">React</p>
+              <div class="skill-bar-bg"><div class="skill-bar" style="width:85%"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <p class="skill-name">Kotlin</p>
+              <div class="skill-bar-bg"><div class="skill-bar" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <p class="skill-name">Python</p>
+              <div class="skill-bar-bg"><div class="skill-bar" style="width:90%"></div></div>
+            </div>
+            <div class="skill-card">
+              <p class="skill-name">C++</p>
+              <div class="skill-bar-bg"><div class="skill-bar" style="width:90%"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+       <section id="projects" class="section">
+  <h2 class="section-title">Proyectos</h2>
+
+  <div class="projects-grid">
+    <article class="project-card">
+      <img class="project-thumb" alt="Captura del proyecto backend" src="https://img.freepik.com/premium-photo/big-city-from-sky-falling-stars-top-view_1025277-3723.jpg" />
+      <div class="project-body">
+        <h3 class="project-title">Proyecto Backend</h3>
+        <p class="project-desc">Aplicación backend desarrollada con Node.js y Express, enfocada en la gestión de datos y comunicación con bases de datos.</p>
+        <div class="project-links">
+          <a class="link-primary" href="https://github.com/nullPointerLuka/Projecto-Backend" target="_blank">Código fuente</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img class="project-thumb" alt="Captura del proyecto de aplicaciones nativas" src="https://img.freepik.com/premium-photo/big-city-from-sky-falling-stars-top-view_1025277-3723.jpg" />
+      <div class="project-body">
+        <h3 class="project-title">Proyecto de Aplicaciones Nativas</h3>
+        <p class="project-desc">Desarrollo de una aplicación móvil nativa utilizando tecnologías modernas para Android, con enfoque en rendimiento y usabilidad.</p>
+        <div class="project-links">
+          <a class="link-primary" href="https://github.com/nullPointerLuka/Proyecto_Aplicaciones_Nativas" target="_blank">Código fuente</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img class="project-thumb" alt="Captura del proyecto tienda" src="https://img.freepik.com/premium-photo/big-city-from-sky-falling-stars-top-view_1025277-3723.jpg" />
+      <div class="project-body">
+        <h3 class="project-title">Tienda Online</h3>
+        <p class="project-desc">Proyecto web de tienda virtual con carrito de compras, desarrollado con HTML, CSS, JavaScript y conexión a base de datos.</p>
+        <div class="project-links">
+          <a class="link-primary" href="https://github.com/nullPointerLuka/Tienda_entrega_2" target="_blank">Código fuente</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+        <!-- Education -->
+        <section id="education" class="section">
+          <h2 class="section-title">Educacion</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Fundacion Universitaria Compensar</h3>
+                <p class="timeline-sub">Actualmente en Curso</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Sena </h3>
+                <p class="timeline-sub">Tecnico de software</p>
+                <p class="timeline-desc">Graduado con Honores</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Achievements -->
+        <section id="achievements" class="section">
+          <h2 class="section-title">Metas</h2>
+
+          <div class="achievements-grid">
+  <div class="achievement">
+    <span class="material-symbols-outlined achievement-icon">workspace_premium</span>
+    <div>
+      <h3 class="achievement-title">Mejorar mis habilidades en programación web</h3>
+      <p class="achievement-desc">Aprender y practicar con proyectos pequeños en HTML, CSS y JavaScript para fortalecer mi base.</p>
+    </div>
+  </div>
+
+  <div class="achievement">
+    <span class="material-symbols-outlined achievement-icon">school</span>
+    <div>
+      <h3 class="achievement-title">Obtener certificación en React</h3>
+      <p class="achievement-desc">Completar un curso certificado en React para aplicar buenas prácticas en desarrollo frontend.</p>
+    </div>
+  </div>
+
+  <div class="achievement">
+    <span class="material-symbols-outlined achievement-icon">trending_up</span>
+    <div>
+      <h3 class="achievement-title">Contribuir a un proyecto open source</h3>
+      <p class="achievement-desc">Realizar al menos una contribución útil en GitHub a un repositorio público antes de fin de año.</p>
+    </div>
+  </div>
+
+  <div class="achievement">
+    <span class="material-symbols-outlined achievement-icon">cloud_sync</span>
+    <div>
+      <h3 class="achievement-title">Aprender fundamentos de la nube</h3>
+      <p class="achievement-desc">Familiarizarme con los conceptos básicos de AWS y Vercel para desplegar mis proyectos personales.</p>
+    </div>
+  </div>
+</div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-center">
+          <h2 class="section-title">Ponte en contacto</h2>
+          <p class="section-text">
+          Siempre estoy abierto a discutir nuevos proyectos u oportunidades de colaboración. No dudes en revisar mi trabajo en GitHub.</p>
+
+          <div class="contact-cta">
+            <a class="btn primary large" href="https://github.com/nullPointerLuka" aria-label="Ver en GitHub">
+              <!-- GitHub SVG -->
+              <svg class="github-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text">© 2024 Luis Eduardo Lucas Gutiérrez. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
